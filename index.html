@@ -3,49 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Foezeil Jahangier | Microsoft Security Blog</title>
+
+<title>Foezeil Jahangier | Microsoft Security</title>
 
 <style>
 
-body{
+*{
     margin:0;
-    font-family:Segoe UI, Arial, sans-serif;
-    background:#0f172a;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:#05133B;
     color:white;
 }
 
 header{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     text-align:center;
-    padding:80px 20px;
-    background:#111827;
+    padding:40px;
 }
 
-h1{
-    font-size:3rem;
+.hero{
+    max-width:700px;
+}
+
+.logo{
+    font-size:4rem;
+    font-weight:700;
+    margin-bottom:20px;
 }
 
 .subtitle{
-    color:#94a3b8;
-    font-size:1.2rem;
+    color:#26B9FF;
+    font-size:1.3rem;
+    margin-bottom:30px;
 }
 
-section{
-    padding:50px;
-    max-width:1000px;
-    margin:auto;
-}
-
-.card{
-    background:#1e293b;
-    padding:25px;
-    margin-bottom:20px;
-    border-radius:12px;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    color:#94a3b8;
+.intro{
+    color:#d1d5db;
+    line-height:1.8;
+    font-size:1.05rem;
 }
 
 </style>
@@ -54,59 +57,23 @@ footer{
 <body>
 
 <header>
-<h1>Foezeil Jahangier</h1>
+
+<div class="hero">
+
+<h1 class="logo">Foezeil Jahangier</h1>
 
 <p class="subtitle">
-Microsoft Security | Entra ID | Zero Trust
+Your trusted guide to Microsoft Security
 </p>
+
+<p class="intro">
+Navigating the evolving Microsoft security landscape through practical insights,
+real-world experiences, and continuous learning.
+</p>
+
+</div>
 
 </header>
-
-<section>
-
-<div class="card">
-<h2>Welcome</h2>
-
-<p>
-Welcome to my Microsoft Security blog.
-Here I share practical guidance, lessons learned, best practices, and how-to articles related to Microsoft Entra ID, Identity Security, and Zero Trust.
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>Topics</h2>
-
-<ul>
-<li>Microsoft Entra ID</li>
-<li>Conditional Access</li>
-<li>Identity Governance</li>
-<li>Privileged Identity Management (PIM)</li>
-<li>Zero Trust</li>
-</ul>
-
-</div>
-
-<div class="card">
-
-<h2>Upcoming Articles</h2>
-
-<ul>
-<li>What Is Microsoft Entra ID?</li>
-<li>Conditional Access Explained</li>
-<li>Zero Trust in Practice</li>
-<li>PIM Step-by-Step Guide</li>
-<li>Getting Started with Identity Governance</li>
-</ul>
-
-</div>
-
-</section>
-
-<footer>
-© 2026 Foezeil Jahangier
-</footer>
 
 </body>
 </html>
