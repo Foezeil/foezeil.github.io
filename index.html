@@ -1,56 +1,65 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Foezeil Jahangier | Microsoft Security Blog</title>
+<title>Microsoft Security | Foezeil Jahangier</title>
 
 <style>
 
-body{
+*{
     margin:0;
-    font-family:Segoe UI, Arial, sans-serif;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Segoe UI", Arial, sans-serif;
     background:#0f172a;
     color:white;
+    min-height:100vh;
 }
 
 header{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     text-align:center;
-    padding:80px 20px;
-    background:#111827;
+    min-height:100vh;
+    padding:40px;
 }
 
 h1{
-    font-size:3rem;
+    font-size:4rem;
+    font-weight:700;
+    margin-bottom:20px;
 }
 
 .subtitle{
-    color:#94a3b8;
-    font-size:1.2rem;
-}
-
-section{
-    padding:50px;
-    max-width:1000px;
-    margin:auto;
-}
-
-.card{
-    background:#1e293b;
-    padding:25px;
-    margin-bottom:20px;
-    border-radius:12px;
-}
-
-a{
+    font-size:1.4rem;
     color:#38bdf8;
-    text-decoration:none;
+    margin-bottom:30px;
+}
+
+.description{
+    max-width:700px;
+    font-size:1.15rem;
+    color:#cbd5e1;
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+.author{
+    color:#94a3b8;
+    font-size:1rem;
 }
 
 footer{
     text-align:center;
     padding:30px;
-    color:#94a3b8;
+    color:#64748b;
+    border-top:1px solid rgba(255,255,255,0.08);
 }
 
 </style>
@@ -59,53 +68,22 @@ footer{
 <body>
 
 <header>
-<h1>Foezeil Jahangier</h1>
+
+<h1>Microsoft Security</h1>
 
 <p class="subtitle">
-Microsoft Security • Entra ID • Defender XDR • Zero Trust
+Your trusted guide to Microsoft Security
 </p>
+
+<p class="description">
+Navigating the evolving Microsoft security landscape through practical insights, real-world experiences, and continuous learning.
+</p>
+
+<p class="author">
+by Foezeil Jahangier
+</p>
+
 </header>
-
-<section>
-
-<div class="card">
-<h2>About Me</h2>
-
-<p>
-Welkom op mijn blog. Hier deel ik praktische kennis,
-how-to's en ervaringen rondom Microsoft Security.
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>Focusgebieden</h2>
-
-<ul>
-<li>Microsoft Entra ID</li>
-<li>Conditional Access</li>
-<li>Microsoft Defender XDR</li>
-<li>Identity Governance</li>
-<li>Zero Trust</li>
-</ul>
-
-</div>
-
-<div class="card">
-
-<h2>Binnenkort beschikbaar</h2>
-
-<ul>
-<li>Wat is Microsoft Entra ID?</li>
-<li>Conditional Access uitgelegd</li>
-<li>Defender XDR voor beginners</li>
-<li>PIM stap voor stap</li>
-</ul>
-
-</div>
-
-</section>
 
 <footer>
 © 2026 Foezeil Jahangier
