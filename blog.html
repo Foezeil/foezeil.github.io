@@ -18,11 +18,10 @@ body{
     font-family:"Segoe UI",sans-serif;
     background:#05133B;
     color:white;
-    padding:60px;
 }
 
 nav{
-    position:absolute;
+    position:fixed;
     top:30px;
     right:50px;
 }
@@ -38,49 +37,38 @@ nav a:hover{
 }
 
 .container{
-    max-width:900px;
-    margin:120px auto 0;
+    max-width:800px;
+    margin:150px auto;
+    padding:20px;
 }
 
 h1{
     font-size:3rem;
-    margin-bottom:40px;
+    margin-bottom:50px;
 }
 
 .article{
-    display:block;
-    background:#0D204D;
-    border-radius:16px;
-    padding:30px;
-    margin-bottom:20px;
-    text-decoration:none;
+    margin-bottom:35px;
+}
+
+.article a{
     color:white;
-    transition:0.3s;
-}
-
-.article:hover{
-    background:#16336F;
-}
-
-.article-title{
-    font-size:1.4rem;
+    text-decoration:none;
+    font-size:1.5rem;
     font-weight:600;
-    margin-bottom:10px;
 }
 
-.article-description{
-    color:#d1d5db;
-    line-height:1.6;
-    margin-bottom:10px;
+.article a:hover{
+    color:#26B9FF;
 }
 
-.article-date{
-    color:#7ea2d6;
-    font-size:.95rem;
+.date{
+    color:#8CA6D1;
+    margin-top:8px;
+    font-size:0.95rem;
 }
 
 </style>
-
 </head>
 
 <body>
@@ -93,23 +81,14 @@ h1{
 
 <div class="container">
 
-<h1>Articles</h1>
+<h1>Blog</h1>
 
-<a class-conditional-access-work.html
-
-<div class="article-title">
-How Does Conditional Access Work?
+<div class="article">
+    how-does-conditional-access-work.html
+        How Does Conditional Access Work?
+    </a>
+    <div class="date">18 August 2026</div>
 </div>
-
-<div class="article-description">
-A deep dive into Microsoft's Conditional Access evaluation process, policy logic, and access decisions.
-</div>
-
-<div class="article-date">
-18 August 2026
-</div>
-
-</a>
 
 </div>
 
