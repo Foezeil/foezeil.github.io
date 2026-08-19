@@ -1,1 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>CA Series #01 - How Does Conditional Access Work? | Foezeil Jahangier</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:#05133B;
+    color:white;
+    line-height:1.8;
+}
+
+nav{
+    position:fixed;
+    top:30px;
+    left:50%;
+    transform:translateX(-50%);
+    width:550px;
+    max-width:90%;
+    display:flex;
+    justify-content:space-evenly;
+    background:rgba(255,255,255,0.06);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:999px;
+    box-shadow:0 8px 30px rgba(0,0,0,.25);
+    padding:10px 20px;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:999px;
+    transition:all .3s ease;
+}
+
+nav a:hover{
+    background:rgba(255,255,255,0.12);
+    color:#26B9FF;
+}
+
+.container{
+    max-width:900px;
+    margin:150px auto 80px;
+    padding:20px;
+}
+
+.date{
+    color:#8CA6D1;
+    margin-bottom:30px;
+}
+
+h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+h2{
+    margin-top:50px;
+    margin-bottom:15px;
+    color:#26B9FF;
+}
+
+p{
+    margin-bottom:20px;
+}
+
+ul{
+    margin-left:25px;
+    margin-bottom:20px;
+}
+
+.code-block{
+    background:#0B1D54;
+    border-left:4px solid #26B9FF;
+    padding:20px;
+    border-radius:8px;
+    margin:25px 0;
+    overflow-x:auto;
+}
+
+.note{
+    background:rgba(38,185,255,.1);
+    border:1px solid rgba(38,185,255,.2);
+    padding:20px;
+    border-radius:10px;
+    margin:25px 0;
+}
+
+.back-link{
+    display:inline-block;
+    margin-top:50px;
+    color:#26B9FF;
+    text-decoration:none;
+}
+
+.back-link:hover{
+    text-decoration:underline;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="blog.html">Blog</a>
+    <a href="about.html">About</a>
+</nav>
+
+<div class="container">
+
+    <h1>CA Series #01 - How Does Conditional Access Work?</h1>
+
+    <div class="date">
+        Published on 18 August 2026
+    </div>
+
+    <p>
+        Conditional Access is often described as the policy engine of Microsoft Entra ID.
+        It evaluates every sign-in attempt and determines whether access should be granted,
+        blocked, or require additional controls such as Multi-Factor Authentication (MFA).
+    </p>
+
+    <div class="note">
+        Think of Conditional Access as an "IF - THEN" engine:
+        IF certain conditions are met, THEN a specific action is enforced.
+    </div>
+
+    <h2>Why Conditional Access Matters</h2>
+
+    <p>
+        Traditional username and password authentication is no longer enough to protect modern identities.
+        Conditional Access helps organizations make access decisions based on user, device, location, risk,
+        application, and many other signals.
+    </p>
+
+    <ul>
+        <li>Protect cloud applications</li>
+        <li>Reduce unauthorized access</li>
+        <li>Enforce MFA when necessary</li>
+        <li>Support Zero Trust principles</li>
+    </ul>
+
+    <h2>How Conditional Access Works</h2>
+
+    <p>
+        Every time a user signs in, Microsoft Entra evaluates the sign-in request.
+    </p>
+
+    <div class="code-block">
+        User Sign-in<br>
+        ↓<br>
+        Authentication<br>
+        ↓<br>
+        Conditional Access Evaluation<br>
+        ↓<br>
+        Grant Controls Applied<br>
+        ↓<br>
+        Access Granted or Blocked
+    </div>
+
+    <p>
+        During evaluation, Conditional Access checks:
+    </p>
+
+    <ul>
+        <li>User or Group membership</li>
+        <li>Target application</li>
+        <li>Device compliance status</li>
+        <li>Location information</li>
+        <li>Sign-in risk</li>
+        <li>User risk</li>
+    </ul>
+
+    <h2>Example Policy</h2>
+
+    <p>
+        A common policy requires MFA whenever administrators sign in.
+    </p>
+
+    <div class="code-block">
+        IF User = Administrator<br>
+        AND App = Any Cloud App<br>
+        THEN Require MFA
+    </div>
+
+    <h2>Key Takeaways</h2>
+
+    <ul>
+        <li>Conditional Access is Microsoft's policy engine.</li>
+        <li>Policies evaluate real-time sign-in signals.</li>
+        <li>MFA is only one possible control.</li>
+        <li>Conditional Access is a core component of Zero Trust.</li>
+    </ul>
+
+    <a class="back-link" href="blog.html">
+        ← Back to Blog
+    </a>
+
+</div>
+
+</body>
+</html>
